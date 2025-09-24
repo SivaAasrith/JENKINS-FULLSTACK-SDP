@@ -6,7 +6,7 @@ pipeline {
         // ===== FRONTEND BUILD =====
         stage('Build Frontend') {
             steps {
-                dir('frontend') {
+                dir('my-app-cra') {
                     bat 'npm install'
                     bat 'npm run build'
                 }
@@ -21,7 +21,7 @@ pipeline {
                     rmdir /S /Q "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\gamingfrontend"
                 )
                 mkdir "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\gamingfrontend"
-                xcopy /E /I /Y frontend\\build\\* "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\gamingfrontend"
+                xcopy /E /I /Y my-app-cra\\build\\* "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\gamingfrontend"
                 '''
             }
         }
