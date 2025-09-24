@@ -1,6 +1,7 @@
 {
   "name": "my-app-cra",
   "version": "0.1.0",
+   "homepage": "/gamingfrontend/",
   "private": true,
   "homepage": "https://sivaaasrith.github.io/GamingPortal",
   "dependencies": {
