@@ -1,0 +1,79 @@
+/* App.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: #0f0f23;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(255, 0, 255, 0.3);
+}
+
+/* Logo section */
+.logo-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ff00cc;
+  text-shadow: 0 0 10px #ff00cc;
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ff00cc;
+}
+
+/* Logout button */
+.logout-btn {
+  background: transparent;
+  border: 1.5px solid #ff00cc;
+  color: #ff00cc;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #ff00cc;
+  color: white;
+}
+
+/* Padding for pages below navbar */
+.page-container {
+  padding-top: 80px; /* Navbar height offset */
+}

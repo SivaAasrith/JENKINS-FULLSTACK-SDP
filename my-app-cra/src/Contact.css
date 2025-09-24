@@ -1,0 +1,95 @@
+.contact-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a, #1a001a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-card {
+  background: #1a1a1a;
+  padding: 40px 50px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.contact-card:hover {
+  transform: scale(1.02);
+}
+
+.contact-card h1 {
+  font-size: 2.5rem;
+  color: #ff00cc;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px #ff00cc, 0 0 20px #8000ff;
+}
+
+.contact-card p {
+  margin-bottom: 25px;
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 2px solid #222;
+  outline: none;
+  background: #222;
+  color: #fff;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder,
+.contact-form select {
+  color: #bbb;
+}
+
+/* Neon glow on focus */
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #ff00cc;
+  box-shadow: 0 0 10px #ff00cc, 0 0 20px #8000ff;
+  background: #2a1a2a;
+}
+
+/* Submit button with glow on hover */
+.contact-form button {
+  background: linear-gradient(135deg, #ff00cc, #8000ff);
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s, box-shadow 0.3s;
+}
+
+.contact-form button:hover {
+  box-shadow: 0 0 15px #ff00ff, 0 0 40px #8000ff, 0 0 60px #ff00cc;
+  transform: translateY(-2px);
+}
+
+.contact-note {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}

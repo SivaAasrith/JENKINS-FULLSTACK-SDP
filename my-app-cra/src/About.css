@@ -1,0 +1,101 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.about-page {
+  font-family: 'Poppins', sans-serif;
+  color: #eee;
+  background: #1a0a3d; /* Deep purple background */
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/* Hero Section */
+.about-hero {
+  position: relative;
+  height: 40vh;
+  background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  border-bottom: 2px solid #8a4fff; /* Purple accent */
+}
+
+.about-hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 10, 61, 0.8); /* Darker purple overlay */
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.8rem;
+  color: #b399ff; /* Soft light purple */
+  text-shadow: 0 0 15px #b399ff;
+  font-weight: 700;
+}
+
+.hero-content p {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: #dcd6f7; /* Pale purple */
+  font-weight: 500;
+}
+
+/* About Content */
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #a16eff; /* Vibrant purple */
+  border-left: 6px solid #8a4fff;
+  padding-left: 15px;
+  font-weight: 700;
+  text-shadow: 0 0 8px #8a4fff;
+}
+
+.about-section p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #cbc3f2;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+}

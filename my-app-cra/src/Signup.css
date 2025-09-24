@@ -1,0 +1,187 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Signup Page Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4b0070 0%, #1a1a2e 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background image */
+.signup-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://images.unsplash.com/photo-1505682634904-d7c0f63a184c?auto=format&fit=crop&w=2070&q=80');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+/* Signup form card */
+.signup-card {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  padding: 50px 40px;
+  max-width: 450px;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Logo */
+.signup-card .logo {
+  margin-bottom: 20px;
+}
+
+.signup-card .logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff0055;
+}
+
+/* Heading */
+.signup-card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ff77aa;
+}
+
+.signup-card p {
+  font-size: 14px;
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+/* Input fields */
+.signup-card .input-group {
+  margin-bottom: 20px;
+}
+
+.signup-card input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.signup-card input:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Placeholders */
+.signup-card input::placeholder {
+  color: #ddd;
+  font-size: 14px;
+}
+
+/* Signup button */
+.signup-card button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(45deg, #ff0055, #ff77aa);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.signup-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 119, 170, 0.6);
+}
+
+/* Social login buttons */
+.signup-card .social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.signup-card .social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.signup-card .social-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.signup-card .social-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Redirect text */
+.signup-card .redirect-text {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.signup-card .redirect-text span {
+  color: #ff77aa;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.signup-card .redirect-text span:hover {
+  text-decoration: underline;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .signup-card {
+    padding: 30px 20px;
+  }
+  
+  .social-login {
+    flex-direction: column;
+  }
+}
